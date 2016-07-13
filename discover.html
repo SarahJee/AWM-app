@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Discover</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Stardos+Stencil:700' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/skeleton.css">
+  <link rel="stylesheet" type="text/css" href="css/sweetalert2.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="icons/favicon.png">
+
+</head>
+<body>
+<div class="container"> 	
+  <!-- DISCOVER HOME PAGE -->
+  
+ <main> 
+  <div id="discoverpage">
+    <div class="navbanner">
+      <h6><a href="index.html"><img class="backarrow" src="icons/backarrow.svg" alt="backicon">Discover
+	      <img class="homeicon" src="icons/homeicon.svg" alt="homeicon"></a></h6>
+    </div><!-- End .navbanner -->
+  </div><!-- End #discoverpage -->
+	
+<div id="seclist">
+    <div id="discoverinfo" class="disc-list">
+      <p>Your mission is a series of 9 questions. You must visit each location and read the information there to find the right answer!</p>
+      <p>Good Luck!</p>
+    </div><!-- End #discoverinfo -->
+    
+    
+	 <!-- AIRCRAFT HALL SECTION -->	
+	<div class="ah-blue disc-list closed section" data-target="aircrafthall"><h4>Aircraft Hall</h4>
+	<img src="icons/planeicon.svg" alt="planeicon"></div> 
+	    
+  <div id="aircrafthall">
+      <img class="dispic" src="images/aircrafthall.jpg" alt="Photo of Aircraft">
+          
+        <div class="discovinfo">
+           <p>The Aircraft Hall contains the exhibition Air power in the Pacific, 1941–53. You can learn about both the practical side of air power – how aircraft work and are put together – and the stories of how it affected everyday life during the Second World War and the Korean War.</p>
+        </div><!-- End #discoverinfo -->
+
+        <div class="mission">
+          <h5>Mission:</h5>
+            <p>Squadron Leader Wilfred Arthur flew which plane over Milne Bay on 14 April 1943?</p>
+                
+            <div class="answer-choices">
+	            
+              <ul>
+	              
+                <li><input type="radio" name="answer1" id="1-opt1" value="a"> 
+                <label for="1-opt1">Kittyhawk ‘Polly’</label><!--Correct Answer-->
+                <div class="check"></div>
+                </li>
+                
+                <li><input type="radio" name="answer1" id="1-opt2" value="b">
+                <label for="1-opt2">Mustang Sally</label>
+                <div class="check">
+		        </div>
+		        </li>
+		        
+                <li><input type="radio" name="answer1" id="1-opt3" value="c">
+                <label for="1-opt3">Wirraway John</label>
+                <div class="check">
+		        </div>
+		        </li>
+		        
+              </ul>
+              <button onclick="getCheckedValue(0,'answer1')" class="check-answer">Check Answer</button>
+              
+
+            </div><!--End .answers-->
+        </div><!--End .mission-->                 
+         
+  </div><!-- End #aircrafthall -->
+
+  
+    <!-- FIRST WORLD WAR SECTION -->
+  
+      <div class="fww-green disc-list closed section" data-target="firstworldwar"><h4>First World War</h4>
+      <img src="icons/helmeticon.svg" alt="helmeticon"></div>
+  
+  <div id="firstworldwar">
+      <img class="dispic" src="images/FirstWorldWar.jpg" alt="Photo of Canal">
+                
+        <div class="discovinfo">
+           <p>Australia’s involvement in the First World War began when Britain and Germany went to war on 4 August 1914, and both Prime Minister Joseph Cook and Opposition Leader Andrew Fisher, who were in the midst of an election campaign, pledged full support for Britain. The outbreak of war was greeted in Australia, as in many other places, with great enthusiasm.</p>
+        </div><!-- End #discoverinfo -->
+
+        <div class="mission">
+          <h5>Mission:</h5>
+            <p>Which canal did Australian troops defend in 1916?</p>
+                
+            <div class="answer-choices">
+              
+            <ul>
+                
+                <li><input type="radio" name="answer2" id="2-opt1" value="a"> 
+                <label for="2-opt1">Suez Canal</label><!--Correct Answer-->
+                <div class="check"></div>
+                </li>
+                
+                <li><input type="radio" name="answer2" id="2-opt2" value="b">
+                <label for="2-opt2">Panama Canal</label>
+                <div class="check">
+                </div>
+                </li>
+            
+                <li><input type="radio" name="answer2" id="2-opt3" value="c">
+                <label for="2-opt3">Suzhou Canals</label>
+                <div class="check">
+                </div>
+                </li>
+            </ul>
+              
+              <button onclick="getCheckedValue(1,'answer2')" class="check-answer">Check Answer</button>
+              
+            </div><!--End .answers-->
+        </div><!--End .mission-->         
+            
+	</div><!--End #firstworldwar-->
+  
+
+  <!-- SECOND WORLD WAR SECTION -->
+  
+	 <div class="sww-purple disc-list closed section" data-target="secondworldwar"><h4>Second World War</h4> 
+	 <img src="icons/soldiericon.svg" alt="soldiericon"></div>
+ 
+  <div id="secondworldwar" class="open-nav">
+      <img class="dispic" src="images/SecondWorldWar.jpg" alt="Photo of Darwin Bombing">
+          
+        <div class="discovinfo" >
+           <p>On 3 September 1939 Prime Minister Robert Gordon Menzies announced the beginning of Australia's involvement in the Second World War on every national and commercial radio station in Australia. Almost a million Australians, both men and women, served in the Second World War. They fought in campaigns against Germany and Italy in Europe, the Mediterranean and North Africa, as well as against Japan in south-east Asia and other parts of the Pacific. The Australian mainland came under direct attack for the first time, as Japanese aircraft bombed towns in north-west Australia and Japanese midget submarines attacked Sydney harbour.</p>
+        </div><!--End #discovinfo-->
+
+        <div class="mission">
+          <h5>Mission:</h5>
+            <p>Darwin, the largest population centre in northern Australia, was considered a vital asset in Australia's defences against an increasingly aggressive Japanese Empire in the 1930s. When did Darwin get bombed?</p>
+                
+            <div class="answer-choices">
+              
+              <ul>
+                
+                <li><input type="radio" name="answer3" id="3-opt1" value="a"> 
+                <label for="3-opt1">On 19 December 1941</label>
+                <div class="check"></div>
+                </li>
+                
+                <li><input type="radio" name="answer3" id="3-opt2" value="b">
+                <label for="3-opt2">On 19 February 1942</label> <!--Correct Answer-->
+                <div class="check">
+                </div>
+                </li>
+            
+                <li><input type="radio" name="answer3" id="3-opt3" value="c">
+                <label for="3-opt3">On 19 January 1942</label>
+                <div class="check">
+                </div>
+                </li>
+            
+              </ul>
+              
+              <button onclick="getCheckedValue(2,'answer3')" class="check-answer" >Check Answer</button>
+              
+            </div><!--End .answers-->
+        </div><!--End .mission-->
+
+  </div> <!-- End #secondworldwar -->
+  
+
+  <!-- HALL OF VALOUR SECTION -->
+  
+    <div class="hov-orange disc-list closed section" data-target="hallofvalour"><h4>Hall of Valour</h4> 
+    <img src="icons/medalicon.svg" alt="medalicon"></div>
+    
+  <div id="hallofvalour" class="open-nav">
+      <img class="dispic" src="images/HallOfValour.jpg" alt="Photo of Hall of Valour">
+          
+        <div class="discovinfo">
+           <p>The Victoria Cross, the highest award for bravery in the face of the enemy, was instituted in 1856 by Queen Victoria and made retrospective to 1854 to cover the period of the Crimean War. It was awarded to Australians for valour in several major conflicts since the Boer War until replaced by the Victoria Cross for Australia in 1991. The change was minimal; the bronze cross and maroon ribbon was retained and the new award carried all the prestige and tradition of the Imperial Victoria Cross.</p>
+        </div><!-- End #discoverinfo -->
+
+
+        <div class="mission">
+          <h5>Mission:</h5>
+            <p>Who was the first Australian to be awarded a Victoria Cross?</p>
+                
+            <div class="answer-choices">
+              
+              <ul>
+                
+                <li><input type="radio" name="answer4" id="4-opt1" value="a"> 
+                <label for="4-opt1">Lieutenant James Rogers</label>
+                <div class="check"></div>
+                </li>
+                
+                <li><input type="radio" name="answer4" id="4-opt2" value="b">
+                <label for="4-opt2">Lieutenant Colonel Leslie Cecil Maygar</label>
+                <div class="check">
+                </div>
+				</li>
+            
+                <li><input type="radio" name="answer4" id="4-opt3" value="c">
+                <label for="4-opt3">Major General Neville Reginald Howse</label><!--Correct Answer-->
+                <div class="check">
+				</div>
+				</li>
+            
+              </ul>
+              
+              <button onclick="getCheckedValue(3,'answer4')" class="check-answer" >Check Answer</button>
+              
+            </div><!--End .answers-->
+        </div><!--End .mission-->                  
+
+    </div><!--End #firstworldwar-->  
+  
+
+  <!-- ANZAC HALL SECTION -->
+  
+    <div class="ah-pink disc-list closed section" data-target="anzachall"><h4>Anzac Hall</h4>
+    <img src="icons/anzacicon.svg" alt="anzacicon"></div>
+      
+  <div id="anzachall" class="open-nav">
+      <img class="dispic" src="images/anzachall.jpg" alt="Photo of Anzac Hall">
+          
+        <div class="discovinfo">
+           <p>Anzac Hall shows some of the Memorial’s most significant large objects, using sound and light in innovative ways: the objects themselves become screens to tell compelling stories of Australia’s servicemen and women. Discover the Memorial’s famous midget submarine, assembled from sections of two of the three submarines that raided Sydney in 1942.</p>
+        </div><!-- End #discoverinfo -->
+
+
+        <div class="mission">
+          <h5>Mission:</h5>
+            <p>What is the name of the Lancaster Bomber on display in Anzac Hall?</p>
+                
+            <div class="answer-choices">
+              
+              <ul>
+                
+                <li><input type="radio" name="answer5" id="5-opt1" value="a"> 
+                <label for="5-opt2">O for Oscar</label>
+                <div class="check"></div>
+                </li>
+                
+                <li><input type="radio" name="answer5" id="5-opt2" value="b">
+                <label for="5-opt2">G for George</label><!--Correct Answer-->
+                <div class="check">
+				</div>
+				</li>
+            
+                <li><input type="radio" name="answer5" id="5-opt3" value="c">
+                <label for="5-opt3">P for Polly</label>
+                <div class="check">
+				</div>
+				</li>
+            
+              </ul>
+              
+            <button onclick="getCheckedValue(4,'answer5')" class="check-answer" >Check Answer</button>
+            
+            </div><!--End .answers-->
+        </div><!--End .mission-->                  
+            
+        </div><!--End anzachall--> 
+
+  
+
+  <!-- HALL OF MEMORY SECTION -->
+ 
+    <div class="hom-blue disc-list closed section" data-target="hallofmemory"><h4>Hall of Memory</h4>
+    <img src="icons/poppyicon.svg" alt="poppyicon"></div>
+    
+  <div id="hallofmemory" class="open-nav">
+      <img class="dispic" src="images/HallOfMemory.jpg" alt="Photo of Windows">
+          
+        <div class="discovinfo">
+           <p>The Hall of Memory, set above the Pool of Reflection, is the heart of the Australian War Memorial. It can only be reached by walking past the names of the 102,000 who have given their lives in the service of this country.</p>
+        </div><!-- End #discoverinfo -->
+
+        <div class="mission">
+          <h5>Mission:</h5>
+            <p>What do the Hall's fifteen stained glass windows represent?</p>
+                
+            <div class="answer-choices">
+              
+              <ul>
+                
+                <li><input type="radio" name="answer6" id="6-opt1" value="a"> 
+                <label for="6-opt1">A quality of Australian servicemen and women</label><!--Correct Answer-->
+                <div class="check"></div>
+                </li>
+                
+                <li><input type="radio" name="answer6" id="6-opt2" value="b">
+                <label for="6-opt2">The years of the First World War</label>
+                <div class="check">
+				</div>
+				</li>
+            
+                <li><input type="radio" name="answer6" id="6-opt3" value="c">
+                <label for="6-opt3">The number of battles fought in WW1</label>
+                <div class="check">
+				</div>
+				</li>
+            
+              </ul>
+              
+              <button onclick="getCheckedValue(5,'answer6')" class="check-answer" >Check Answer</button>
+              
+            </div><!--End .answers-->
+        </div><!--End .mission-->                    
+            
+        </div><!--End #firstworldwar-->  
+
+
+  <!-- CONFLICTS 1945 to TODAY SECTION -->
+  
+    <div class="con-green disc-list closed section" data-target="conflicts45today"><h4>Conflicts 1945-today</h4> 
+    <img src="icons/grenadeicon.svg" alt="grenadeicon"></div>
+    
+  <div id="conflicts45today" class="open-nav">
+      <img class="dispic" src="images/Conflicts45Today.jpg" alt="Photo of Ship">
+          
+        <div class="discovinfo">
+           <p>The exhibitions combine cutting edge technology with large iconic objects to tell powerful stories about Australian involvement in conflicts over six decades.</p>
+        </div><!-- End #discoverinfo -->
+
+
+        <div class="mission">
+          <h5>Mission:</h5>
+            <p>Which one of these wars did the HMAS Brisbane serve in?</p>
+                
+            <div class="answer-choices">
+              
+              <ul>
+                
+                <li><input type="radio" name="answer7" id="7-opt1" value="a"> 
+                <label for="7-opt1">WW1</label>
+                <div class="check"></div>
+                </li>
+                
+                <li><input type="radio" name="answer7" id="7-opt2" value="b">
+                <label for="7-opt2">First Gulf War</label><!--Correct Answer-->
+                <div class="check">
+				</div>
+				</li>
+            
+                <li><input type="radio" name="answer7" id="7-opt3" value="c">
+                <label for="7-opt3">Korean War</label>
+                <div class="check">
+				</div>
+				</li>
+            
+              </ul>
+              
+            <button onclick="getCheckedValue(6,'answer7')" class="check-answer" >Check Answer</button>          
+             
+            </div><!--End .answers-->
+        </div><!--End .mission-->                       
+            
+        </div><!--End #conflicts45today-->  
+  
+
+  <!-- MEMORIAL GROUNDS SECTION -->
+  
+    <div class="sww-purple disc-list closed section" data-target="memorialgrounds"><h4>Memorial Grounds</h4> 
+    <img src="icons/awmicon.svg" alt="awmicon"></div>
+      
+  <div id="memorialgrounds" class="open-nav">
+      <img class="dispic" src="images/MemorialGrounds.jpg" alt="Photo of Memorial Grounds">
+          
+        <div class="discovinfo">
+           <p>The Memorial is more than a monument. Inside the sandstone building, with its copper-sheathed dome, selections from a vast National Collection of relics, official and private records, art, photographs, film, and sound are employed to relate the story of a young nation's experience in world wars, regional conflicts, and international peacekeeping.</p>
+        </div><!-- End #discoverinfo -->
+
+        <div class="mission">
+          <h5>Mission:</h5>
+            <p>Who were the founding fathers of the Memorial?</p>
+                
+            <div class="answer-choices">
+              
+              <ul>
+                
+                <li><input type="radio" name="answer8" id="8-opt1"> 
+                <label for="8-opt1">Charles Bean and John Treloar</label><!--Correct Answer-->
+                <div class="check"></div>
+                </li>
+                
+                <li><input type="radio" name="answer8" id="8-opt2">
+                <label for="8-opt2">A.W Bazley and Charles Bean</label>
+                <div class="check">
+				</div>
+				</li>
+            
+                <li><input type="radio" name="answer8" id="8-opt3">
+                <label for="8-opt3">John Charles and Andrew White</label>
+                <div class="check">
+				</div>
+				</li>
+            
+              </ul>
+              
+            <button onclick="getCheckedValue(7,'answer8')" class="check-answer" >Check Answer</button>
+            
+            </div><!--End .answers-->
+        </div> <!--End .mission-->             
+            
+        </div>  <!--End memorialgrounds -->
+
+  
+
+   <!-- SCULPTURE GARDEN SECTION -->
+   
+    <div class="sg-orange disc-list closed section" data-target="sculpturegarden"><h4>Sculpture Garden</h4>
+    <img src="icons/treeicon.svg" alt="treeicon"></div>
+          
+  <div id="sculpturegarden" class="open-nav">
+      <img class="dispic" src="images/SculptureGarden.jpg" alt="Photo of Gardens">
+          
+        <div class="discovinfo">
+           <p>The Memorial opened its Sculpture Garden in January 1999. The Garden offers a place for quiet contemplation of the sacrifice of the many Australians who have died in war. Throughout the grounds are major commemorative works and sculptures, and memorials to the British Commonwealth Occupation Force, Australian servicewomen, Australian Merchant Seamen, Bomber Command and Sandakan. There are also many plaques in memory of particular units.</p>
+        </div><!-- End discovinfo-->
+
+        <div class="mission">
+          <h5>Mission:</h5>
+            <p>In the Garden is a sculpture of a soldier helping a wounded soldier onto donkey by Peter Corlett. Who is known as 'the man with the donkey'?</p>
+                
+            <div class="answer-choices">
+              
+              <ul>
+                
+                <li><input type="radio" name="answer9" id="9-opt1"> 
+                <label for="9-opt1">Private Edward Simpson Kilpatrick</label>
+                <div class="check"></div>
+                </li>
+                
+                <li><input type="radio" name="answer9" id="9-opt2">
+                <label for="9-opt2">Private Joseph Simpson Kirk Patterson</label>
+                <div class="check">
+				</div>
+				</li>
+            
+                <li><input type="radio" name="answer9" id="9-opt3">
+                <label for="9-opt3">Private John Simpson Kirkpatrick </label><!--Correct Answer-->
+                <div class="check">
+				</div>
+				</li>
+            
+              </ul>
+              
+              <button onclick="getCheckedValue(8,'answer9')" class="check-answer" >Check Answer</button>
+              
+            </div><!--End .answers-->
+        </div><!--End .mission-->              
+            
+        </div> <!--End #sculpturegarden--> 
+
+<!-- REPORT/DISCOVER SECTION -->
+<div id="view-report">
+<h3>Your Mission Report</h3>	
+
+ <!-- To Results Page -->       
+<button class="results check-answer" onclick="showResult();">View</button>
+
+</div><!-- End view report -->
+ 
+
+
+</div><!-- End seclist -->
+</main>
+
+	<div id="results-page">
+			<div class="mission-comp">
+				<h2>Mission Accomplished</h2>
+				<h1 id="score"></h1>
+				<p id="full-score"></p>
+			</div>
+	
+	    <footer>
+	    <h1>GAME OVER</h1>
+	      
+	  <!-- Build reset into results page 'home' icon link --> 
+	    <div class="reset" onclick="reset();"><a href="index.html"><img class="home-icon-footer" src="icons/homeicon-footer.svg" alt="homeicon"></a></div>
+
+	  </footer>
+    </div><!-- Results page -->
+	
+	
+
+</div><!-- End container -->
+
+  
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/sweetalert2.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
